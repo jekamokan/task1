@@ -1,0 +1,36 @@
+.bershkaSize__list{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.bershkaSize__btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.519);
+    border-radius: 50%;
+}
+.bershkaSize__btn-active{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.bershkaSize__btn:hover{
+    border: 1px solid black;
+}
+button[disabled] {
+    opacity: 0.6; 
+    background-color: #f2f2f2; 
+    border: 1px solid grey;
+    color: #666; 
+    cursor: not-allowed; /* Запрет курсора при наведении */
+  }
+  .bershkaSize__size{
+    background: url('../../img/size.svg');
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+  }

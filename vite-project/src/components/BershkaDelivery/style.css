@@ -1,0 +1,48 @@
+.bershkaDelivery{
+    border: 1px solid rgba(128, 128, 128, 0.32);
+    border-radius: 5px;
+    margin-bottom: 53px;
+}
+.bershkaDelivery__block{
+    padding: 0 0 0 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bershkaDelivery__block:first-child{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.32);
+}
+
+.bershkaDelivery__text-shop{
+    background: url('../../img/house.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.bershkaDelivery__text-shop span{
+    text-transform: uppercase;
+    color: rgb(0, 197, 0);
+    padding-left: 10px;
+    font-size: 14px;
+}
+.bershkaDelivery__text-home{
+    background: url('../../img/car.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    font-size: 14px;
+
+}
+.bershkaDelivery__text-home span{
+    text-transform: uppercase;
+    color: rgb(0, 197, 0);
+    padding-left: 10px;
+    font-size: 14px;
+}
+.bershkaDelivery__text-info{
+    padding-left: 30px;
+    font-size: 12px;
+    color: gray;
+}

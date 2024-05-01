@@ -1,0 +1,9 @@
+.productCardOne{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}

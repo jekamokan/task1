@@ -1,0 +1,25 @@
+.bershakaInfo{
+    width: 49%;
+    text-align: left;
+    padding: 10px;
+}
+.bershakaInfo_combo{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.bershakaInfo_title{
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+margin-bottom: 5px;
+}
+.bershakaInfo_ref{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: gray;
+}
+.bershakaInfo_price{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}

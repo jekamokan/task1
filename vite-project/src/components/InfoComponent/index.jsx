@@ -5,24 +5,17 @@ import CheckOrder from "../ChechOrder";
 import Size from "../Size/indes";
 import './style.css'
 import { ButtonLink } from "../ButtonLink";
+import { ulid } from 'ulid'
 
-const InfoComponent = ({ colors }) => {
+const colors = [
+  {color: 'black'},
+  {color: 'white'},
+  {color: 'blue'},
+  {color: 'beige'},
+]
+const InfoComponent = () => {
   const [choosedColor, setChoosedColor] = useState('')
 
-  const getColorClass = (color) => {
-    switch (color) {
-      case 'blue':
-        return 'blue-class';
-      case 'black':
-        return 'black-class';
-      case 'beige':
-        return 'beige-class';
-      case 'white':
-        return 'white-class';
-      default:
-        return '';
-    }
-  };
   
   return (
     <div className="infoComponent">
@@ -36,10 +29,9 @@ const InfoComponent = ({ colors }) => {
       <ul className="infoComponent__list">
         {colors.map(color => (
           <li
-            key={color}
-            // style={{ background: color }}
-            className={getColorClass(color)}
-            onClick={() => setChoosedColor(color)}>
+            key={ulid()}
+            style={{ background: color.color }}
+            onClick={() => setChoosedColor(color.color)}>
           </li>
         ))}
       </ul>

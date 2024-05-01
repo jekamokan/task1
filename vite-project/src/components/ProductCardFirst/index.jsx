@@ -14,7 +14,7 @@ const ProductCardOne = () => {
     return (
         <div className="productCardOne">
             <SliderComponents setColors={updateColors} />
-            <InfoComponent colors={colors}/>
+            <InfoComponent />
         </div>
     )
 }

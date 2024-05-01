@@ -8,6 +8,22 @@ import { ButtonLink } from "../ButtonLink";
 
 const InfoComponent = ({ colors }) => {
   const [choosedColor, setChoosedColor] = useState('')
+
+  const getColorClass = (color) => {
+    switch (color) {
+      case 'blue':
+        return 'blue-class';
+      case 'black':
+        return 'black-class';
+      case 'beige':
+        return 'beige-class';
+      case 'white':
+        return 'white-class';
+      default:
+        return '';
+    }
+  };
+  
   return (
     <div className="infoComponent">
       <p className="infoComponent__subtext"> Originals</p>
@@ -21,7 +37,8 @@ const InfoComponent = ({ colors }) => {
         {colors.map(color => (
           <li
             key={color}
-            style={{ background: color }}
+            // style={{ background: color }}
+            className={getColorClass(color)}
             onClick={() => setChoosedColor(color)}>
           </li>
         ))}

@@ -44,3 +44,19 @@ cursor: pointer;
 .infoComponent__chooesedcolor{
   margin-bottom: 40px;
 }
+
+.blue-class {
+  background: blue;
+}
+
+.black-class {
+  background: black;
+}
+
+.beige-class {
+  background: beige;
+}
+
+.white-class {
+  background: white;
+}

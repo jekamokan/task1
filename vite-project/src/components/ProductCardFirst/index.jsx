@@ -8,7 +8,6 @@ const ProductCardOne = () => {
     const [colors, setColors] = useState([])
     console.log('colors', colors)
     const updateColors = (newColor) => {
-        // setColors(prevColors => [...prevColors, newColor])
         setColors(prevColors => prevColors.concat(newColor));
     };
 
